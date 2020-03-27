@@ -1,0 +1,7 @@
+func: zd2.o
+	g++ -o second zd2.o
+	./second
+zd2.o: zd2.c
+	g++ -c zd2.c
+clean:
+	rm -f second
